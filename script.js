@@ -19,6 +19,13 @@ document.getElementById('dugme3').addEventListener('click', function() {
             document.getElementById('chat-container').style.display = 'flex';
             document.getElementById('card-container').style.display = 'none';
 
+            // Play sound and display message after 1 second
+            setTimeout(() => {
+                const audio = new Audio('zvuk.mp3');
+                audio.play();
+                document.querySelector('.message.six').innerText = 'Jeco jesi li tu?';
+            }, 1500);
+
             // Add event listener for send button
             document.querySelector('.send').addEventListener('click', function() {
                 const message = document.querySelector('.send-input').value;
