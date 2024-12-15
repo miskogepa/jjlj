@@ -468,6 +468,10 @@ body {
   .message.six {
     background-color: #343541;
   }
+
+  .message.six {
+    text-align: left; /* Align text to the left */
+  }
   
   .send-img {
     width: 100px;
