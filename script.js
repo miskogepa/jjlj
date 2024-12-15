@@ -18,6 +18,13 @@ document.getElementById('dugme3').addEventListener('click', function() {
             document.getElementById('chat-container').innerHTML = data;
             document.getElementById('chat-container').style.display = 'flex';
             document.getElementById('card-container').style.display = 'none';
+
+            // Add event listener for send button
+            document.querySelector('.send').addEventListener('click', function() {
+                const message = document.querySelector('.send-input').value;
+                document.querySelector('.message.six').innerText = message;
+                document.querySelector('.send-input').value = '';
+            });
         })
         .catch(error => console.error('Error loading chat:', error));
 });

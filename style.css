@@ -451,6 +451,8 @@ body {
   .message {
     width: 100%;
     height: 40px;
+    text-align: right; /* Align text to the right */
+    color: white; /* Set text color to white */
   }
   
   .message.one,
@@ -526,12 +528,12 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #212121; /* Gray background */
     z-index: 1000;
 }
 
 #chat-container .containerr {
-    background-color:  #343541;; /* Gray background */
+    background-color: #343541; /* Gray background */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
