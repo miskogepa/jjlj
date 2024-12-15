@@ -334,3 +334,10 @@ body {
     color: white;
     transform: rotateY(180deg);
   }
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
